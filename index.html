@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidinhas Exóticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comidinhas Exóticas</h1>
+        <h3>Provando de tudo um pouco!</h3>
+        <div class="search">
+            <input type="text" placeholder="Busque algum alimento" id="input" onkeydown="verificarEnter(event)">
+            <button onclick="buscar()">Pesquisar</button>
+        </div>
+        <div class="categories">
+            <h4>Categorias:</h4>
+            <ul>
+                <li><button onclick="salgadas()">Salgadas</button></li>
+                <li><button onclick="doces()">Doces</button></li>
+                <li><button onclick="bebidas()">Bebidas</button></li>
+                <li><button onclick="mostrarTudo()">Tudo</button></li>
+            </ul>
+        </div>
+        <div class="container-comidas">
+            <ul id="lista"></ul>
+        </div>
+    </div>
+    <footer>Created by Carlos Lauter</footer>
+    <script src="script.js"></script>
+</body>
+</html> 
