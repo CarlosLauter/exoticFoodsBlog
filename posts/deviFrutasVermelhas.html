@@ -13,20 +13,30 @@
         <p></p>
         <div class="foodResume">
             <h3>O gosto:</h3>
-            <p>Carlos L - <q></q></p>
-            <p>Mahena - <q></q></p>
+            <p>Carlos L - <q>Essa bomba é horrível, não confiem.</q></p>
+            <p>Mahena - <q>Tem um sabor muito fraquinho, como um suco de morango natural e aguado. Carlos L odiou mas eu gostei, pois eu até gosto de suco sem açucar.</q></p>
             <h3>A proposta:</h3>
-            <p>Carlos L - <q></q></p>
-            <p>Mahena - <q></q></p>
+            <p>Carlos L - <q>Cumpre com a proposta, cumpre de modo feio e rude ao paladar, mas cumpre.</q></p>
+            <p>Mahena - <q>Esse sabor se adequa melhor à proposta que o de Guaraná e Açaí, na minha opinião.</q></p>
             <h3>Nota:</h3>
-            <p>Carlos L - <q></q></p>
-            <p>Mahena - <q></q></p>
-            <h4>Nota final: </h4>
+            <p>Carlos L - <span id="nota-carlos"></span></p>
+            <p>Mahena - <span id="nota-mahena"></span></p>
+            <h4>Nota final: <span id="nota-final"></span></h4>
         </div>
         <div class="container-button">
             <a href="/index.html">Voltar para o início</a> ||
-            <a href="deviFrutasVermelhas.html">Próxima comida</a>
+            <a href="bubbleMix.html">Comida Anterior</a> ||
+            <a href="deviGuaranaAcai.html">Próxima comida</a> 
         </div>
     </div>
+    <script src="../script.js"></script>
+    <script>
+        const idAtual = 3
+        const food = foods.find(f => f.id === idAtual)
+
+        document.getElementById('nota-carlos').innerHTML = gerarEstrelas(food.notas.carlos)
+        document.getElementById('nota-mahena').innerHTML = gerarEstrelas(food.notas.mahena)
+        document.getElementById('nota-final').innerHTML = gerarEstrelas(food.notas.final)
+    </script>
 </body>
 </html>

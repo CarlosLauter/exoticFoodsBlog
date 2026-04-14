@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baly Caipirinha</title>
+    <title>Sucrilhos de Banana</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Baly Caipirinha</h1>
-        <img src="/assets/images/balyCaipirinha.jpg" id="img-solo">
+        <h1>Sucrilhos de Banana</h1>
+        <img src="/assets/images/sucrilhosBanana.jpg" id="img-solo">
         <p></p>
         <div class="foodResume">
             <h3>O gosto:</h3>
-            <p>Carlos L - <q></q></p>
-            <p>Mahena - <q></q></p>
+            <p>Carlos L - <q>Muito gostoso, achei o gosto bem suave, não achei forte ou enjoativo, na medida certa para aproveitar bem.</q></p>
+            <p>Mahena - <q>Muito bom, igualzinho ao que eu comia na infância. Sabor forte, porém obviamente artifical de banana. Eu amo.</q></p>
             <h3>A proposta:</h3>
-            <p>Carlos L - <q></q></p>
-            <p>Mahena - <q></q></p>
+            <p>Carlos L - <q>Ótima proposta, sinceramente gosto artifical de banana tende a ser sucesso e com o sucrilhos não foi diferente.</q></p>
+            <p>Mahena - <q>Proposta legal, deixa o sucrilhos mais interessante e aromático. Feito para dar nostalgia.</q></p>
             <h3>Nota:</h3>
             <p>Carlos L - <span id="nota-carlos"></span></p>
             <p>Mahena - <span id="nota-mahena"></span></p>
@@ -25,13 +25,13 @@
         </div>
         <div class="container-button">
             <a href="/index.html">Voltar para o início</a> ||
-            <a href="blueTakis.html">Comida Anterior</a> ||
-            <a href="bubbleMix.html">Próxima comida</a> 
+            <a href="deviGuaranaAcai.html">Comida Anterior</a> ||
+            <a href="">Próxima comida</a> 
         </div>
     </div>
     <script src="../script.js"></script>
     <script>
-        const idAtual = 1
+        const idAtual = 5
         const food = foods.find(f => f.id === idAtual)
 
         document.getElementById('nota-carlos').innerHTML = gerarEstrelas(food.notas.carlos)

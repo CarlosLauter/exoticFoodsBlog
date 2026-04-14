@@ -19,14 +19,25 @@
             <p>Carlos L - <q></q></p>
             <p>Mahena - <q></q></p>
             <h3>Nota:</h3>
-            <p>Carlos L - <q></q></p>
-            <p>Mahena - <q></q></p>
-            <h4>Nota final: </h4>
+            <p>Carlos L - <span id="nota-carlos"></span></p>
+            <p>Mahena - <span id="nota-mahena"></span></p>
+            <h4>Nota final: <span id="nota-final"></span></h4>
         </div>
         <div class="container-button">
             <a href="/index.html">Voltar para o início</a> ||
-            <a href="deviFrutasVermelhas.html">Próxima comida</a>
+            <a href="balyCaipirinha.html">Comida Anterior</a> ||
+            <a href="deviFrutasVermelhas.html">Próxima comida</a> 
+            
         </div>
     </div>
+    <script src="../script.js"></script>
+    <script>
+        const idAtual = 2
+        const food = foods.find(f => f.id === idAtual)
+
+        document.getElementById('nota-carlos').innerHTML = gerarEstrelas(food.notas.carlos)
+        document.getElementById('nota-mahena').innerHTML = gerarEstrelas(food.notas.mahena)
+        document.getElementById('nota-final').innerHTML = gerarEstrelas(food.notas.final)
+    </script>
 </body>
 </html>
